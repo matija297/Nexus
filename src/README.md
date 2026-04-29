@@ -1,19 +1,2 @@
-# README.md
-Projekt Nexus – Tehnička dokumentacija
-Izvršni sažetak
-
-Cilj projekta je analiza podataka iz kratera Jezero na Marsu radi izrade automatiziranog navigacijskog sustava. Ulazni podaci uključuju telemetriju (lokacije, uzorke), a izlaz je optimizirani navigacijski nalog za robotsku jedinicu.
-
-Metodologija obrade podataka
-
-Podaci su obrađeni korištenjem Python skripti i DataFrame struktura. Uklonjeni su senzorski šumovi poput ekstremnih vrijednosti temperature i anomalija u pH. Primijenjeni su logički filtri radi osiguranja točnosti analize.
-
-Geoprostorna analiza i vizualizacija
-
-Rezultati su prikazani kroz grafove i mape:
-
-korelacija parametara
-toplinske karte
-raspodjela metana
-
-Satelitska mapa koristi extent mapping za precizno pozicioniranje podataka na GPS koordinatama.
+Tehnički izvještaj: Analiza kratera Jezero (Projekt Nexus)Verzija: 1.0 | Fokus: Standardizacija inženjerskog izvještavanja1. Izvršni sažetakOvaj projekt obuhvaća obradu i interpretaciju telemetrijskih podataka prikupljenih s površine Marsa. Glavni cilj bio je transformirati sirove senzorske podatke u strukturirani navigacijski nalog za terenski modul. Kroz eliminaciju šuma i analizu kemijskih anomalija, identificirane su prioritetne zone istraživanja te je generiran JSON protokol za daljnju komunikaciju s roverom.2. Arhitektura sustavaRepozitorij je organiziran prema standardima Projekta Nexus kako bi se osigurala sljedivost:/data: Izvorni CSV zapisi (telemetrija, lokacije, kemijski uzorci)./src: Python skripte za čišćenje podataka i automatizaciju./assets: Generirani grafički prikazi i satelitske snimke.3. Metodologija obrade podataka (Data Wrangling)Tijekom procesa čišćenja podataka primijenjene su sljedeće inženjerske odluke:Detekcija anomalija: Identificirani su i uklonjeni zapisi s ekstremnim vrijednostima temperature koji su rezultat pogreške u prijenosu podataka (senzorski šum).Relacijsko spajanje: Tablice s kemijskim sastavom i GPS lokacijama spojene su u jedinstveni DataFrame kako bi se omogućila korelacija parametara.Argumentacija: Algoritamska selekcija fokusirana je na zone s neutralnim pH vrijednostima, što je ključno za identifikaciju geološki zanimljivih lokacija.4. Analitičke vizualizacije i interpretacija4.1. Analiza temperaturnih fluktuacijaInterpretacija: Grafikon prikazuje dnevne oscilacije temperature. Uočena stabilnost podataka potvrđuje ispravnost senzora unutar zadanog vremenskog okvira.4.2. Korelacija koncentracije metana i pH vrijednostiInterpretacija: Vidljiva je korelacija između blago alkalnog tla i povišenih razina metana, što indicira zone od visokog znanstvenog interesa.4.3. Toplinska karta dubine bušenjaInterpretacija: Toplinska karta vizualizira optimalne dubine za uzorkovanje. Ovi podaci izravno su utjecali na parametre u JSON nalogu.4.4. Distribucija uzoraka po zonamaInterpretacija: Histogram prikazuje gustoću uzoraka u različitim sektorima kratera, omogućujući optimizaciju putanje kretanja rovera.4.5. Završna satelitska mapa (Extent Mapping)Interpretacija: Korištenjem koncepta extent mapiranja, svi analizirani podaci su precizno pozicionirani na GPS koordinatni sustav kratera Jezero. Ovo omogućuje roveru pouzdanu orijentaciju i kretanje unutar zadanih sigurnosnih granica.5. Komunikacijski protokol (JSON Uplink)Nakon analize, sustav automatizirano generira JSON paket. Korištenje programskih petlji umjesto ručnog kodiranja osigurava skalabilnost i brzinu generiranja naredbi.
+6. Inženjerski dnevnik (Troubleshooting Log)Simptom: Pogreška pri učitavanju CSV datoteka (podaci spojeni u jedan stupac).Uzrok: Korištenje pogrešnog separatora (točka-zarez umjesto zareza).Rješenje: Eksplicitno postavljanje parametra separatora unutar Python skripte.Simptom: Grafovi nisu prikazivali podatke na ispravnim lokacijama na karti.Uzrok: Problem s extent mapiranjem i neusklađenost razmjera satelitske snimke.Rješenje: Ručno redefiniranje granica koordinatnog sustava kako bi se podaci preklopili s vizualom.
