@@ -1,0 +1,8 @@
+Biblioteke potrebne za rad:
+
+
+pandas 
+matplotlib.pyplot
+seaborn
+requests
+json
