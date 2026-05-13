@@ -153,12 +153,13 @@ for index, row in kandidati.iterrows():
     })
 
 # Završni JSON payload
+'''
 payload = {
     "tim": "Matija_Božić",
     "misija": "Jezero_Crater_Drill",
     "nalozi": komande_za_rover
 }
-
+'''
 # API endpoint (test webhook)
 api_url = "https://webhook.site/03f33f00-c3a0-4a66-8b06-63f1af147efa"
 
