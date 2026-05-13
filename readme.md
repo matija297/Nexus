@@ -21,8 +21,8 @@
 5. Inženjerski dnevnik (Troubleshooting)Problem s učitavanjem separatoraSimptom: Podaci u tablicama bili su nečitljivi i spojeni u jedan redak.Uzrok: Izvorna datoteka koristila je točka-zarez (;) umjesto standardnog zareza.Rješenje: U skripti je eksplicitno definiran ispravan separator, čime je uspostavljena ispravna struktura baze.Problem s extent mapiranjemSimptom: Vizualizacija podataka nije se poklapala sa satelitskom podlogom.Uzrok: Neusklađenost rubnih koordinata (extent) i razmjera slike.Rješenje: Izvršena je ponovna kalibracija koordinatnog sustava prema službenim GPS podacima kratera Jezero.
 
  ![Opis](assets/graph1_temp_h2o.png)
- ![Opis](assets/graf2_heatmap_depth.png)
- ![Opis](assets/graf3.methane_scatterpng)
+ ![Opis](assets/graph2_heatmap_depth.png)
+ ![Opis](assets/graph3_methane_scatter.png)
  ![Opis](assets/graf.png)
  ![Opis](assets/graf.png)
  ![Opis](assets/graf.png)
