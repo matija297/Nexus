@@ -1,11 +1,28 @@
 🚀 Projekt Nexus: Tehnički izvještaj (Krater Jezero)Standardizacija inženjerskog izvještavanja | Verzija 1.0
+
 1. Izvršni sažetakOvaj projekt dokumentira transformaciju sirove telemetrije u operativni navigacijski sustav za istraživački modul. Glavni cilj bio je filtriranje senzorskog šuma i prepoznavanje ključnih kemijskih anomalija. Rezultat je precizan model kretanja koji omogućuje roveru sigurno navigiranje unutar znanstveno relevantnih zona kratera Jezero.
+
 2. Metodologija obrade podatakaU razvoju sustava primijenjeni su sljedeći inženjerski principi:Čišćenje podataka: Uklonjeni su ekstremni temperaturni otkloni koji su bili rezultat senzorskih grešaka, čime je osigurana točnost daljnje analize.Integracija izvora: Spajanjem različitih baza podataka (lokacije i kemijski sastav) stvoren je jedinstveni model za donošenje odluka.Algoritamska logika: Umjesto ručnog odabira, sustav automatizirano prepoznaje lokacije s optimalnim pH vrijednostima i razinama metana.
+
 3. Vizualizacija i interpretacija rezultata
+
 3.1. Analiza senzorske stabilnostiInterpretacija: Prikazani trendovi potvrđuju da sustavi za hlađenje rovera rade unutar dopuštenih granica, unatoč oscilacijama vanjske temperature.
+
 3.2. Kemijska korelacija parametaraInterpretacija: Uočena je direktna veza između povišenog metana i specifičnog sastava tla, što ove točke definira kao prioritetne ciljeve misije.
+
 3.3. Toplinska karta dubine bušenjaInterpretacija: Vizualizacija gustoće tla omogućila je kalibraciju dubine bušenja kako bi se spriječilo mehaničko trošenje opreme.
+
 3.4. Prostorna distribucija uzorakaInterpretacija: Statistički prikaz gustoće uzoraka u različitim sektorima opravdava trenutnu strategiju kretanja prema istočnom dijelu kratera
+
 3.5. Završna navigacijska mapa (Extent Mapping)Interpretacija: Korištenjem extent mapiranja, podaci su sinkronizirani sa satelitskom snimkom. Ova mapa postavlja jasne granice sigurnog kretanja unutar GPS koordinata misije.
+
 4. Komunikacijski protokolSustav koristi logičke petlje za automatsko generiranje niza naredbi. Ovakav pristup omogućuje roveru da obrađuje velike količine koordinata bez potrebe za ručnim unosom svake pojedinačne točke, čime se minimizira mogućnost ljudske pogreške.
+
 5. Inženjerski dnevnik (Troubleshooting)Problem s učitavanjem separatoraSimptom: Podaci u tablicama bili su nečitljivi i spojeni u jedan redak.Uzrok: Izvorna datoteka koristila je točka-zarez (;) umjesto standardnog zareza.Rješenje: U skripti je eksplicitno definiran ispravan separator, čime je uspostavljena ispravna struktura baze.Problem s extent mapiranjemSimptom: Vizualizacija podataka nije se poklapala sa satelitskom podlogom.Uzrok: Neusklađenost rubnih koordinata (extent) i razmjera slike.Rješenje: Izvršena je ponovna kalibracija koordinatnog sustava prema službenim GPS podacima kratera Jezero.
+
+ ![Opis](assets/graph1_temp_h2o.png)
+ ![Opis](assets/graf.png)
+ ![Opis](assets/graf.png)
+ ![Opis](assets/graf.png)
+ ![Opis](assets/graf.png)
+ ![Opis](assets/graf.png)
