@@ -23,6 +23,6 @@
  ![Opis](assets/graph1_temp_h2o.png)
  ![Opis](assets/graph2_heatmap_depth.png)
  ![Opis](assets/graph3_methane_scatter.png)
- ![Opis](assets/graf.png)
- ![Opis](assets/graf.png)
- ![Opis](assets/graf.png)
+ ![Opis](assets/jezero_mission_map.jpg)
+ ![Opis](assets/scatter_plot.png)
+
